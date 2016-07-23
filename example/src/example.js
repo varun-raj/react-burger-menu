@@ -96,7 +96,7 @@ let Demo = React.createClass({
     if (this.state.side === 'right') {
       jsx = (
         <MenuWrap wait={20} side={this.state.side}>
-          <Menu id={this.state.currentMenu} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} right>
+          <Menu disableEscButton id={this.state.currentMenu} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} right>
             {items}
           </Menu>
         </MenuWrap>
@@ -104,7 +104,7 @@ let Demo = React.createClass({
     } else {
       jsx = (
         <MenuWrap wait={20}>
-          <Menu id={this.state.currentMenu} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+          <Menu disableEscButton id={this.state.currentMenu} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
             {items}
           </Menu>
         </MenuWrap>

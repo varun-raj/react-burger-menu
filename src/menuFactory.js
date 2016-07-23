@@ -106,7 +106,7 @@ export default (styles) => {
     listenForClose(e) {
       e = e || window.event;
 
-      if (this.state.isOpen && (e.key === 'Escape' || e.keyCode === 27)) {
+      if (this.state.isOpen && !this.props.disableEscButton && (e.key === 'Escape' || e.keyCode === 27)) {
         this.toggleMenu();
       }
     },
